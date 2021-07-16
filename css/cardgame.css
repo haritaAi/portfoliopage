@@ -1,0 +1,57 @@
+*{
+    text-align: center;
+    background-color: #415a4d;
+    color :rgb(230, 225, 233);
+}
+body{
+  overflow: hidden;
+  height: 100vh;
+  border :5px solid white;
+}
+.tittle{
+  padding-top: 20px;
+  margin : 50px auto 0;
+}
+h1{
+  color : goldenrod;
+}
+.gameSpace{
+  height : 94vh;
+  box-sizing:border-box;
+}
+.game-container{
+  
+  margin: 2rem auto ;
+}
+.container-box {
+    position:relative;
+    width: 100px;
+    height:100px;
+  }
+  li{
+    margin: 0 3px;
+    display : inline-flex;  
+  }
+  #reset{
+    margin-bottom: 5%;
+  }
+  .image {
+    display: block;
+    max-width: 100px;
+    max-height: 100px;
+    z-index : 0;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 100px;
+    max-width: 100px;
+    opacity: 1;
+    transition: .5s ease;
+    background-color: #6a2a9e;
+   
+  }

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+                integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" 
+                crossorigin="anonymous" data-parcel-ignore>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" data-parcel-ignore>
+    <link rel="stylesheet" href="/css/bootstrap-grid.min.css" data-parcel-ignore>
+    <link rel="stylesheet" href="/css/bootstrap.css" data-parcel-ignore>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+
+
+   
+   <div class="container-fluid">
+    <header >
+      <nav class = "navbar">
+          <img src="images/h.png" class = "nav-logo" alt=""/>
+          <ul class = "nav-menu">
+          
+            <li  class = "nav--item">
+                <a href = "#" class = "nav-link">Home</a>
+                </li>
+            <li  class = "nav--item">
+              <a href = "#projects" class = "nav-link">projects</a>
+            </li>
+            <li  class = "nav--item">
+              <!-- <a href = "/components/resume.html" target = "popup" id = "resume-link" class = "nav-link" 
+                         onClick = "window.open('/components/resume.html','popup','width=600,height=600'); return false;">resume</a>
+             -->
+                  <a href="#"  class = "nav-link" data-toggle="modal" data-target="#resume">resume</a> 
+             </li>
+            <li class="nav--item">
+              <a href="#" class ="nav-link" data-toggle="modal" data-target="#contact">contact</a>
+            </li>
+          </ul>
+          <div  class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class = "hero--title">Hi, I am<span class = "hero--name"> Harita</span>
+      <div class = "hero--description"> I create  user centric web applications</div>
+        </div> 
+  
+        <!-- <div class="resume">
+          <embed type = "text/html" src ="/components/harita-cv2021.html" >
+        </div> -->                  
+        
+   </div>
+
+   <div class="modal  fade" id = "resume" >
+    <div class="modal-dialog   modal-xl">
+      <div class="modal-content modal-card  ">
+        <div class="modal-header">
+          <h5 class="modal-title text-dark">RESUME</h5>
+          <button type="button" class="close text-dark" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body ">
+          <embed class = " embd-file " type = "text/pdf" src ="pdf/harita-cv2021.pdf" >
+        </div>
+        <div class="modal-footer">
+         
+          <button type="button " class="btn display-2 "><a href="pdf/harita-cv2021.pdf" class ="text-dark" download="haritaCV"> Download pdf</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+</div>
+
+
+<section id = "programming__tool_section" >
+
+<header class = "features--title">
+Technology 
+</header>
+<div class="programming--tools">
+<div class="tool-box">
+
+<img class = "logo-icon" src="images/javascript.png" alt="">
+<img class = "logo-icon" src="images/html.png" alt="">
+<img class = "logo-icon" src="images/css.png" alt="">
+<img class = "logo-icon" src="images/mongodb.png" alt="">
+<img class = "logo-icon" src="images/nodejs.png" alt="">
+<img class = "logo-icon" src="images/rect.png" alt="">
+<img class = "logo-icon" src="images/git.png" alt="">      
+</div>
+</div>
+</section>
+
+
+
+<section id = "projects">  
+<header class = "features--title">
+Projects
+</header>
+             <article class = " feature " data-aos="fade-right">
+                <div class="feature--background">
+                <img class = "feature--image" src="images/netly-600.png" alt="">
+                </div>
+                <div class="feature--content">
+                <div class="project--title">NETLY</div> 
+                <div class="tools">
+                        <div class="feature--tab">React</div>
+                        <div class="feature--tab">Nodejs</div>
+                        <div class="feature--tab">MongoDb</div>
+                        <div class="feature--tab">Express</div>
+                        <div class="feature--tab">Pusher</div>
+                    </div>
+
+
+                    <div class="feature--site">
+                    <a href="https://cryptic-atoll-36789.herokuapp.com" target = "_blank" data-parcel-ignore>visit site</a>
+                    </div>
+                    <div class="feature--github">
+                    <a href="https://github.com/haritaAi/netly" target = "_blank" data-parcel-ignore>github</a>
+                    </div>
+                </div>
+                </article>       
+
+
+   <article class = " feature " data-aos="fade-left">
+   <div class="feature--background">
+     <img class = "feature--image" src="images/cloud-website.png" alt="">
+   </div>
+   <div class="feature--content">
+    <div class="project--title">Cloud Service Website</div> 
+            <div class="tools">
+                <div class="feature--tab">HTML</div>
+                <div class="feature--tab">CSS</div>
+                <div class="feature--tab">javascript</div>
+                
+            </div>
+            <div class="feature--site">
+                <a href="https://cloud-service-site.netlify.app" target = "_blank" data-parcel-ignore> visit site</a>
+            </div>
+            <div class="feature--github">
+                <a href="https://github.com/haritaAi/HtmlCssProject" target = "_blank" data-parcel-ignore>github</a>
+            </div>
+   </div>
+ </article>  
+
+
+ <article class = " feature " data-aos="fade-right">
+  <div class="feature--background">
+    <img class = "feature--image" src="images/cardgame.png" alt="">
+  </div>
+  <div class="feature--content">
+   <div class="project--title">Memory card game</div> 
+    <div class="tools">
+         <div class="feature--tab">HTML</div>
+         <div class="feature--tab">CSS</div>
+         <div class="feature--tab">javascript</div>
+         
+     </div>
+
+
+     <div class="feature--site">
+       <a href="./cardgame.html" target = "_blank" data-parcel-ignore>PLAY </a>
+     </div>
+    
+  </div>
+</article> 
+
+
+
+</section>
+ 
+<section id = "contact-container" >
+<div class = "btn btn-info contact-btn  mx-auto" data-toggle="modal" data-target="#contact">Contact</div>
+
+
+<div class="modal  fade" id = "contact" >
+<div class="modal-dialog   modal-lg">
+  <div class="modal-content ">
+    <div class="modal-header">
+      <h5 class="modal-title ">contact</h5>
+      <button type="button" class="close text-dark" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body display-6 info-form">
+     <form action="mailto:haritabiju@gmail.com"
+           method = "POST"
+           enctype = "multipart/form-data"
+           name = "emailForm">
+        <input type="text" name = "name" placeholder="name" class="contact-input text-light">
+        <input type="email" name = "email" placeholder="email" class="contact-input text-dark" required>
+        <input type="text" name = "company" placeholder="company" class="contact-input text-dark">
+        <textarea type="textarea" name = "message" placeholder="type your message here.." class="message-area text-dark"></textarea>
+
+     </form>
+    </div>
+    <div class="modal-footer">
+     
+      <button type="button " class="btn btn-info ">send message</button>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+
+<section id = "footer">
+<div class="tool-box">
+<div class = "footer__item"><a href="#">HOME</a>   </div>
+<div class = "footer__item"><a href="#projects">PROJECT</a></div>
+<div class = "footer__item"><a href="#"  class = "nav-link" data-toggle="modal" data-target="#resume">RESUME</a>  </div>    
+</div>
+
+<div class = "footer--text" >Copyright &copy;2020 Harita</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="/js/main.js">
+
+   </script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>  
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+   <script>
+       AOS.init();
+     </script>
+</body>
+</html>
