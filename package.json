@@ -12,12 +12,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cssnano": "^5.0.6",
-    "postcss": "^8.3.5"
+    "cssnano": "^4.1.11",
+    "postcss": "^8.3.5",
+    "postcss-preset-env": "^6.7.0",
+    "posthtml": "^0.16.4",
+    "posthtml-modules": "^0.7.4"
   },
   "dependencies": {
     "autoprefixer": "^10.3.1",
-    "parcel-bundler": "^1.12.5",
+    "jquery": "^3.6.0",
     "postcss-modules": "^4.1.3"
   }
 }
