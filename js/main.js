@@ -1,14 +1,3 @@
-const box1 = document.querySelector(".movie-1");
-const box2 = document.querySelector(".movie-2");
-const img = document.querySelectorAll(".dog");
-
-
-box1.addEventListener("click",toggleImage);
-box2.addEventListener("click", toggleImage);
-
-function toggleImage(){
-  img.forEach(i => i.classList.toggle("hide"));
-}
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
