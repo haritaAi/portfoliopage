@@ -223,10 +223,10 @@ a:visited{
     text-align: center;
 }
 .feature--image{
-    max-width:90%;
-    max-height: 90%;
+
+    margin:auto auto;    
+    max-width:90%;   
     text-align: center;
-    margin:auto auto;
     object-fit: scale-down;
 }
 .feature--nut{
