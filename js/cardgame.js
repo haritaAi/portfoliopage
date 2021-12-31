@@ -37,6 +37,7 @@ let cardDeck = [  {id : "btn-a",cell : "cell11", isOccupied : "false"},
                    { src : "https://harita-portfolio-basic.netlify.app/images/shushing-face.png"   ,                         name : "shushing-face"},
                    { src : "https://harita-portfolio-basic.netlify.app/images/smiling-face-with-sunglasses.png",             name : "smiling-face-with-sunglasses"},
                    { src : "https://harita-portfolio-basic.netlify.app/images/money-mouth-face.png" ,                        name : "money-mouth-face" }
+                   
                 ];
         
                 
