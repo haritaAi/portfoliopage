@@ -124,21 +124,21 @@ function getRamdomNumberArray(){
     let numberArray = [];
     let numIndex1 ;
     let numIndex2 ;
-    console.log("in getRandomArray function");
-    console.log("numberArray length : " + numberArray.length);
+//     console.log("in getRandomArray function");
+//     console.log("numberArray length : " + numberArray.length);
  while(numberArray.length < 16){
-      console.log("in while loop");
+//       console.log("in while loop");
      
         numIndex1 = getRandomNumber(); 
         let ifIncludes = includesNumber(numberArray,numIndex1);
-        console.log(ifIncludes);
+        // console.log(ifIncludes);
         if(!ifIncludes) numberArray.push(numIndex1);
         //else numIndex1 = getRandomNumber();
 
 
         numIndex2 = getRandomNumber();
         ifIncludes = includesNumber(numberArray,numIndex2);
-        console.log(ifIncludes);
+        // console.log(ifIncludes);
         if(!ifIncludes) numberArray.push(numIndex2);
        // else numIndex2 = getRandomNumber();
  }
@@ -148,7 +148,7 @@ function getRamdomNumberArray(){
 
 
 function generateBoard(){
-   console.log("in generateBoard");
+//    console.log("in generateBoard");
     const  boardDiv = document.querySelector("div.game-board");
     
 
@@ -176,19 +176,19 @@ function generateBoard(){
     setClass.value = "game-box";
     ul4.setAttributeNode(setClass);
    
-    console.log("hello world");
+//     console.log("hello world");
             
         let numberArray = []; 
         numberArray =  getRamdomNumberArray();
-        console.log(numberArray );
+        // console.log(numberArray );
 
        for(let key in imageDeck){
              
             let numIndex1 =  numberArray[key*2];
             let numIndex2 = numberArray[(key*2)+1];
         
-            console.log("numberIndex1 = " + numIndex1 );
-            console.log("numberIndex2 = " + numIndex2 );
+        //     console.log("numberIndex1 = " + numIndex1 );
+        //     console.log("numberIndex2 = " + numIndex2 );
             
             const li1 = generateLI(numIndex1,key);
             
@@ -218,7 +218,7 @@ function generateBoard(){
 
 
 function fetchCover(cardID){
-        console.log("in fetchCover");
+        // console.log("in fetchCover");
         for(let key in cardDeck)
          if(cardDeck[key].id === cardID) return cardDeck[key].cell;
 }
@@ -228,17 +228,17 @@ function addStar(){
         
         const li = document.createElement("li");
         const img = document.createElement("img");
-        img.src = "starNew.png ";
+        img.src = "../images/starNew.png ";
         
         li.appendChild(img);
         ul.appendChild(li);
-        console.log(ul);
+        // console.log(ul);
 }
 function compareCard(openCardID,newCardId){
         let name1 = document.getElementById(openCardID).name;
         let name2 = document.getElementById(newCardID).name;
-        console.log(" open card id is " + name1);
-        console.log(" new card id is " + name2);
+        // console.log(" open card id is " + name1);
+        // console.log(" new card id is " + name2);
         
         if(name1 === name2) { points += 1;addStar(); isOpenFlag = false; console.log(`points : ${points}`);}
         else {  
@@ -250,7 +250,7 @@ function compareCard(openCardID,newCardId){
 }
 function closeCard(cardID){        
         
-        console.log(" inside closecard" + cardID);        
+        // console.log(" inside closecard" + cardID);        
  
         onclick = document.getElementById(fetchCover(cardID)).style.zIndex = 1;      
 
@@ -289,7 +289,7 @@ function cardEvent(event){
  
          let cardID = event.target.id;
 
- console.log(cardID);
+//  console.log(cardID);
 if(cardID === "cell11"){
 
         if(cardEnabled){
@@ -299,7 +299,7 @@ if(cardID === "cell11"){
                                            openCardID = "btn-a"; 
                                         } 
                 else{ newCardID = "btn-a";
-                console.log("newCard = " + newCardID);
+                // console.log("newCard = " + newCardID);
                       compareCard(openCardID,newCardID);
                         }     
                 } 
@@ -315,7 +315,7 @@ if(cardID === "cell12"){
                                            openCardID = "btn-b"; 
                                         } 
                 else{ newCardID = "btn-b";
-                console.log("newCard = " + newCardID);
+                // console.log("newCard = " + newCardID);
                       compareCard(openCardID,newCardID);
                         }     
                 }                           
@@ -331,7 +331,7 @@ if(cardID === "cell12"){
                                            openCardID = "btn-c"; 
                                         } 
                 else{ newCardID = "btn-c";
-                console.log("newCard = " + newCardID);
+                // console.log("newCard = " + newCardID);
                       compareCard(openCardID,newCardID);
                         }     
                 }                           
@@ -348,7 +348,7 @@ if(cardID === "cell14"){
                                            openCardID = "btn-d"; 
                                         } 
                 else{ newCardID = "btn-d";
-                console.log("newCard = " + newCardID);
+                // console.log("newCard = " + newCardID);
                       compareCard(openCardID,newCardID);
                         }     
                 }                           
@@ -366,7 +366,7 @@ if(cardID === "cell21"){
                                                            openCardID = "btn-e"; 
                                                         } 
                                 else{ newCardID = "btn-e";
-                                console.log("newCard = " + newCardID);
+                                // console.log("newCard = " + newCardID);
                                       compareCard(openCardID,newCardID);
                                         }     
                                 }                           
@@ -384,7 +384,7 @@ if(cardID === "cell21"){
                                                            openCardID = "btn-f"; 
                                                         } 
                                 else{ newCardID = "btn-f";
-                                console.log("newCard = " + newCardID);
+                                // console.log("newCard = " + newCardID);
                                       compareCard(openCardID,newCardID);
                                         }     
               
@@ -401,7 +401,7 @@ if(cardID === "cell23"){
                                                            openCardID = "btn-g"; 
                                                         } 
                                 else{ newCardID = "btn-g";
-                                console.log("newCard = " + newCardID);
+                                // console.log("newCard = " + newCardID);
                                       compareCard(openCardID,newCardID);
                                         }     
                                 }                           
@@ -419,7 +419,7 @@ if(cardID === "cell24"){
                                                            openCardID = "btn-h"; 
                                                         } 
                                 else{ newCardID = "btn-h";
-                                console.log("newCard = " + newCardID);
+                                // console.log("newCard = " + newCardID);
                                       compareCard(openCardID,newCardID);
                                         }     
                                 }                           
@@ -436,7 +436,7 @@ if(cardID === "cell31"){
                                                            openCardID = "btn-i"; 
                                                         } 
                                 else{ newCardID = "btn-i";
-                                console.log("newCard = " + newCardID);
+                                // console.log("newCard = " + newCardID);
                                       compareCard(openCardID,newCardID);
                                         }     
                                 }                           
@@ -454,7 +454,7 @@ if(cardID === "cell32"){
                                                            openCardID = "btn-j"; 
                                                         } 
                                 else{ newCardID = "btn-j";
-                                console.log("newCard = " + newCardID);
+                                // console.log("newCard = " + newCardID);
                                       compareCard(openCardID,newCardID);
                                         }     
                                 }                           
@@ -472,7 +472,7 @@ if(cardID === "cell33"){
                                                            openCardID = "btn-k"; 
                                                         } 
                                 else{ newCardID = "btn-k";
-                                console.log("newCard = " + newCardID);
+                                // console.log("newCard = " + newCardID);
                                       compareCard(openCardID,newCardID);
                                         }     
                                 }                           
@@ -490,7 +490,7 @@ if(cardID === "cell34"){
                                                            openCardID = "btn-l"; 
                                                         } 
                                 else{ newCardID = "btn-l";
-                                console.log("newCard = " + newCardID);
+                                // console.log("newCard = " + newCardID);
                                       compareCard(openCardID,newCardID);
                                         }     
                                 }                           
@@ -508,7 +508,7 @@ if(cardID === "cell41"){
                                                            openCardID = "btn-m"; 
                                                         } 
                                 else{ newCardID = "btn-m";
-                                console.log("newCard = " + newCardID);
+                                // console.log("newCard = " + newCardID);
                                       compareCard(openCardID,newCardID);
                                         }     
                                 }                           
@@ -524,7 +524,7 @@ if(cardID === "cell41"){
                                                            openCardID = "btn-n"; 
                                                         } 
                                 else{ newCardID = "btn-n";
-                                console.log("newCard = " + newCardID);
+                                // console.log("newCard = " + newCardID);
                                       compareCard(openCardID,newCardID);
                                         }     
                                 }                           
@@ -540,7 +540,7 @@ if(cardID === "cell43"){
                                                            openCardID = "btn-o"; 
                                                         } 
                                 else{ newCardID = "btn-o";
-                                console.log("newCard = " + newCardID);
+                                // console.log("newCard = " + newCardID);
                                       compareCard(openCardID,newCardID);
                                         }     
                                 }                           
@@ -557,7 +557,7 @@ if(cardID === "cell43"){
                                                            openCardID = "btn-p"; 
                                                         } 
                                 else{ newCardID = "btn-p";
-                                console.log("newCard = " + newCardID);
+                                // console.log("newCard = " + newCardID);
                                       compareCard(openCardID,newCardID);
                                         }     
                                 }                           
