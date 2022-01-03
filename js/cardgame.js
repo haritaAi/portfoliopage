@@ -29,14 +29,14 @@ let cardDeck = [  {id : "btn-a",cell : "cell11", isOccupied : "false"},
                 ];
                 
                 const imageDeck = [
-                {    src : "https://harita-portfolio-basic.netlify.app/images/joy-face.png",                                 name : "joy-face"},
-                {    src : "https://harita-portfolio-basic.netlify.app/images/sleeping-face.png",                            name : "sleeping-face"},
-                {    src : "https://harita-portfolio-basic.netlify.app/images/liking-face.png",                              name : "liking-face"},
-                {    src : "https://harita-portfolio-basic.netlify.app/images/smiling-face-with-hearts.png",                 name : "smiling-face-with-hearts"},
-                   { src : "https://harita-portfolio-basic.netlify.app/images/face-with-rolling-eyes.png",                   name : "face-with-rolling-eyes"},
-                   { src : "https://harita-portfolio-basic.netlify.app/images/shushing-face.png"   ,                         name : "shushing-face"},
-                   { src : "https://harita-portfolio-basic.netlify.app/images/smiling-face-with-sunglasses.png",             name : "smiling-face-with-sunglasses"},
-                   { src : "https://harita-portfolio-basic.netlify.app/images/money-mouth-face.png" ,                        name : "money-mouth-face" }
+                {    src : "../images/joy-face.png",                                 name : "joy-face"},
+                {    src : "../images/sleeping-face.png",                            name : "sleeping-face"},
+                {    src : "../images/liking-face.png",                              name : "liking-face"},
+                {    src : "../images/smiling-face-with-hearts.png",                 name : "smiling-face-with-hearts"},
+                   { src : "../images/face-with-rolling-eyes.png",                   name : "face-with-rolling-eyes"},
+                   { src : "../images/shushing-face.png"   ,                         name : "shushing-face"},
+                   { src : "../images/smiling-face-with-sunglasses.png",             name : "smiling-face-with-sunglasses"},
+                   { src : "../images/money-mouth-face.png" ,                        name : "money-mouth-face" }
                    
                 ];
         
